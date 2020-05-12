@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openbox_menu>
+	<menu id="root-menu" label="OpenBox 3">
+		<separator label="MENU"\n>
+			<menu id="6" label="Screenshot">
+            <item label="ScreenGrab"> <action name="Execute">
+                <execute>screengrab</execute>
+            </action> </item>
+        </menu>
+        <menu id="7" label="Multimedia">
+            <item label="mpv Media Player"> <action name="Execute">
+                <execute>mpv</execute>
+            </action> </item>
+            <item label="ncmpcpp"> <action name="Execute">
+                <execute>urxvt -e ncmpcpp</execute>
+            </action> </item>
+            <item label="PulseAudio Volume Control"> <action name="Execute">
+                <execute>pavucontrol</execute>
+            </action> </item>
+        </menu>
+        <menu id="5" label="Network">
+            <item label="FireFox"> <action name="Execute">
+                <execute>firefox</execute>
+            </action> </item>
+            <item label="Thunderbird"> <action name="Execute">
+                <execute>thunderbird</execute>
+            </action> </item>
+            <item label="Transmission"> <action name="Execute">
+                <execute>transmission-gtk</execute>
+            </action> </item>
+        </menu>
+	<menu id="3" label="Office">
+		<item label="Gimp"> <action name="Execute">
+				<execute>gimp</execute>
+			</action>
+		</item>
+            <item label="Zathura"> <action name="Execute">
+                <execute>zathura</execute>
+            </action> </item>
+        </menu>
+        <menu id="19" label="Shells">
+            <item label="Thunar"> <action name="Execute">
+                <execute>thunar</execute>
+            </action> </item>
+            <item label="urxvt"> <action name="Execute">
+                <execute>urxvt</execute>
+            </action> </item>
+            <item label="VirtualBox"> <action name="Execute">
+                <execute>virtualbox</execute>
+            </action> </item>
+        </menu>
+        <menu id="37" label="System">
+            <menu id="36" label="Settings">
+                <item label="Customize Look and Feel"> <action name="Execute">
+                    <execute>lxappearance</execute>
+                </action> </item>
+                <item label="Desktop Preferences"> <action name="Execute">
+                    <execute>pcmanfm --desktop-pref</execute>
+                </action> </item>
+                <item label="Openbox Configuration Manager"> <action name="Execute">
+                    <execute>obconf</execute>
+                </action> </item>
+                <item label="Preferred Applications"> <action name="Execute">
+                    <execute>libfm-pref-apps</execute>
+                </action> </item>
+            </menu>
+            <item label="KeePassXC"> <action name="Execute">
+                <execute>keepassxc</execute>
+            </action> </item>
+        </menu>
+        <separator/>
+        <menu id="40" label="OpenBox">
+            <menu id="client-list-menu"/>
+            <item label="Reconfigure"> <action name="Reconfigure"/> </item>
+            <separator/>
+	    <item label="Exit"> <action name="Exit"/> </item>
+	    <item label="Restart">
+		    <action name="Execute">
+			    <execute>reboot</execute>
+		    </action>
+	    </item>
+	    <item label="Poweroff">
+		    <action name="Execute">
+			    <execute>poweroff</execute>
+		    </action>
+	    </item>
+        </menu>
+    </menu>
+</openbox_menu>
