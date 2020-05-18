@@ -1,13 +1,12 @@
-#include ".config/colorschemes/kutekitty"
+#include ".config/colorschemes/tastylemonade"
 
 !Pixmap
 URxvt.backgroundPixmap: /home/eli/.pixmap.png;style=tiled
 
-
 !! URxvt Appearance
-URxvt.font: xft:DejaVuSansMono:size=9
-URxvt.boldFont: xft:DejaVuSansMono-Bold:size=9
-URxvt.italicFont: xft:DejaVuSansMono-Oblique:size=9
+URxvt.font: xft:FiraCode-Regular:size=9
+URxvt.boldFont: xft:FiraCode-SemiBold:size=9
+URxvt.italicFont: xft:FiraCode-Retina:size=9
 URxvt.letterSpace: 0
 URxvt.lineSpace: 0
 URxvt.internalBorder: 16

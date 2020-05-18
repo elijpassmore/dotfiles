@@ -18,6 +18,6 @@
 
 picom &
 dunst &
-feh --bg-scale /usr/share/backgrounds/wallpaper.png
+nitrogen --restore &
 ~/.config/polybar/launch.sh &
 xrandr --output DisplayPort-1 --primary --mode 1920x1080 --rate 144 &

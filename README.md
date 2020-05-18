@@ -5,21 +5,21 @@
 * bashrc
 * ncmpcpp
 * polybar
-* wallpaper
+* wallpaper (feh)
 * dunst
-* openbox (config and theme)
+* openbox (openbox, obconf)
 * profile
 * urxvt (Xresources)
 * fish
-* lightdm
-* redshift
-* zathura
-* mpd
+* redshift (redshift-minimal)
+* zathura (zathura-pdf-mupdf)
+* mpd (mpd, mpc)
 * picom
 * vim
+* thunar (gvfs, xarchiver, tumbler)
+* gtk theme and icons (gtk-engines, gtk-engine-murrine)
 
-## Other applications used
+## Applications I use but do not configure (or configure minimally)
 
-* feh
-* mpc
-* thunar
+* Libreoffice (libreoffice-still, hunspell, libreoffice-extension-languagetool)
+* Lightdm (lightdm, lightdm-slick-greeter, lightdm-settings)

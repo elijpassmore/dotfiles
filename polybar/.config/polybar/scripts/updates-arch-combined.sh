@@ -15,7 +15,7 @@ fi
 updates=$(("$updates_arch" + "$updates_aur"))
 
 if [ "$updates" -gt 0 ]; then
-    echo "$updates available"
+    echo "$updates"
 else
-    echo "Up to date"
+    echo ""
 fi

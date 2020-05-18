@@ -13,10 +13,6 @@ function fish_prompt
     set fish_greeting
     set -l last_status $status
     
-#    # Show the current working directory
-#    set_color black
-#    echo -n (prompt_pwd)
-#
     # Show # or $
     set_color red
     if test (id -u) -eq 0
@@ -25,17 +21,11 @@ function fish_prompt
         echo -n ' $ '
     end
     set_color normal
-    #set_color --background=black
     echo -n ' '
-    #echo -n $USER
-    #echo -n ' '
-    #set_color normal
-    #echo -n ' '
 end
 
 # Right Prompt
  function fish_right_prompt
-     #set_color --background=black
      echo -n ' '
      echo -n (prompt_pwd)
  end

@@ -1,89 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <openbox_menu>
-	<menu id="root-menu" label="OpenBox 3">
-		<separator label="MENU"\n>
-			<menu id="6" label="Screenshot">
-            <item label="ScreenGrab"> <action name="Execute">
-                <execute>screengrab</execute>
-            </action> </item>
-        </menu>
-        <menu id="7" label="Multimedia">
-            <item label="mpv Media Player"> <action name="Execute">
-                <execute>mpv</execute>
-            </action> </item>
-            <item label="ncmpcpp"> <action name="Execute">
-                <execute>urxvt -e ncmpcpp</execute>
-            </action> </item>
-            <item label="PulseAudio Volume Control"> <action name="Execute">
-                <execute>pavucontrol</execute>
-            </action> </item>
-        </menu>
-        <menu id="5" label="Network">
-            <item label="FireFox"> <action name="Execute">
-                <execute>firefox</execute>
-            </action> </item>
-            <item label="Thunderbird"> <action name="Execute">
-                <execute>thunderbird</execute>
-            </action> </item>
-            <item label="Transmission"> <action name="Execute">
-                <execute>transmission-gtk</execute>
-            </action> </item>
-        </menu>
-	<menu id="3" label="Office">
-		<item label="Gimp"> <action name="Execute">
-				<execute>gimp</execute>
-			</action>
-		</item>
-            <item label="Zathura"> <action name="Execute">
-                <execute>zathura</execute>
-            </action> </item>
-        </menu>
-        <menu id="19" label="Shells">
-            <item label="Thunar"> <action name="Execute">
-                <execute>thunar</execute>
-            </action> </item>
-            <item label="urxvt"> <action name="Execute">
-                <execute>urxvt</execute>
-            </action> </item>
-            <item label="VirtualBox"> <action name="Execute">
-                <execute>virtualbox</execute>
-            </action> </item>
-        </menu>
-        <menu id="37" label="System">
-            <menu id="36" label="Settings">
-                <item label="Customize Look and Feel"> <action name="Execute">
-                    <execute>lxappearance</execute>
-                </action> </item>
-                <item label="Desktop Preferences"> <action name="Execute">
-                    <execute>pcmanfm --desktop-pref</execute>
-                </action> </item>
-                <item label="Openbox Configuration Manager"> <action name="Execute">
-                    <execute>obconf</execute>
-                </action> </item>
-                <item label="Preferred Applications"> <action name="Execute">
-                    <execute>libfm-pref-apps</execute>
-                </action> </item>
-            </menu>
-            <item label="KeePassXC"> <action name="Execute">
-                <execute>keepassxc</execute>
-            </action> </item>
-        </menu>
-        <separator/>
-        <menu id="40" label="OpenBox">
-            <menu id="client-list-menu"/>
-            <item label="Reconfigure"> <action name="Reconfigure"/> </item>
-            <separator/>
-	    <item label="Exit"> <action name="Exit"/> </item>
-	    <item label="Restart">
-		    <action name="Execute">
-			    <execute>reboot</execute>
-		    </action>
-	    </item>
-	    <item label="Poweroff">
-		    <action name="Execute">
-			    <execute>poweroff</execute>
-		    </action>
-	    </item>
-        </menu>
-    </menu>
-</openbox_menu>
+	<menu id="root-menu" label="Openbox 3">
+		<separator label="MENU"\>
+
+			<menu id="applications" label="Applications" icon="/usr/share/icons/oomox-tastylemonade/16x16/places/folder-black.svg">
+				<menu id="filemanager" label="File manager" icon="/usr/share/icons/oomox-tastylemonade/16x16/places/folder-books.svg">
+					<item label="Thunar">
+						<action name="Execute">
+							<execute>thunar</execute>
+						</action>
+					</item>
+				</menu>
+
+				<menu id="terminal" label="Terminal" icon="/usr/share/icons/oomox-tastylemonade/16x16/places/folder-script.svg">
+					<item label="urxvt">
+						<action name="Execute">
+							<execute>urxvt</execute>
+						</action>
+					</item>
+				</menu>
+
+				<menu id="network" label="Network" icon="/usr/share/icons/oomox-tastylemonade/16x16/places/folder-network.svg">
+					<item label="Firefox">
+						<action name="Execute">
+							<execute>firefox</execute>
+						</action>
+					</item>
+					<item label="Thunderbird">
+						<action name="Execute">
+							<execute>thunderbird</execute>
+						</action>
+					</item>
+					<item label="Transmission">
+						<action name="Execute">
+							<execute>transmission-gtk</execute>
+						</action>
+					</item>
+				</menu>
+
+				<menu id="office" label="Office" icon="/usr/share/icons/oomox-tastylemonade/16x16/places/folder-templates.svg">
+					<item label="Zathura">
+						<action name="Execute">
+							<execute>zathura</execute>
+						</action>
+					</item>
+					<item label="Libreoffice">
+						<action name="Execute">
+							<execute>libreoffice</execute>
+						</action>
+					</item>
+					<item label="Gimp">
+						<action name="Execute">
+							<execute>gimp</execute>
+						</action>
+					</item>
+				</menu>
+
+				<menu id="media" label="Media" icon="/usr/share/icons/oomox-tastylemonade/16x16/places/folder-video.svg">
+					<item label="Cantata">
+						<action name="Execute">
+							<execute>cantata</execute>
+						</action>
+					</item>
+					<item label="mpv">
+						<action name="Execute">
+							<execute>mpv --player-operation-mode=pseudo-gui</execute>
+						</action>
+					</item>
+				</menu>
+			</menu>
+
+			<menu id="utilities" label="Utilities" icon="/usr/share/icons/oomox-tastylemonade/16x16/actions/paperclip.svg">
+				<item label="pavucontrol"> 
+					<action name="Execute">
+						<execute>pavucontrol</execute>
+					</action>
+				</item>
+				<item label="KeepassXC">
+					<action name="Execute">
+						<execute>keepassxc</execute>
+					</action>
+				</item>
+				<item label="VirtualBox">
+					<action name="Execute">
+						<execute>virtualbox</execute>
+					</action>
+				</item>
+			</menu>
+
+			<menu id="settings" label="Settings" icon="/usr/share/icons/oomox-tastylemonade/16x16/places/folder-development.svg">
+				<item label="lxappearance">
+					<action name="Execute">
+						<execute>lxappearance</execute>
+					</action>
+				</item>
+				<item label="obconf">
+					<action name="Execute">
+						<execute>obconf</execute>
+					</action>
+				</item>
+				<item label="Nitrogen">
+					<action name="Execute">
+						<execute>nitrogen</execute>
+					</action>
+				</item>
+			</menu>
+
+			<item label="Screengrab" icon="/usr/share/icons/oomox-tastylemonade/16x16/places/folder-photo.svg">
+				<action name="Execute">
+					<execute>screengrab -r</execute>
+				</action>
+			</item>
+
+			<separator/>
+
+			<menu id="openbox" label="Openbox" icon="/usr/share/icons/oomox-tastylemonade/16x16/places/folder-linux.svg">
+				<menu id="client-list-menu"/>
+				<item label="Reconfigure"> 
+					<action name="Reconfigure"/>
+				</item>
+			</menu>
+
+			<menu id="system" label="System" icon="/usr/share/icons/oomox-tastylemonade/16x16/places/folder-private.svg">
+				<item label="Exit"> 
+					<action name="Exit"/> 
+				</item>
+				<item label="Restart"> 
+					<action name="Execute">
+						<execute>reboot</execute>
+					</action>
+				</item>
+				<item label="Poweroff"> 
+					<action name="Execute">
+						<execute>poweroff</execute>
+					</action>
+				</item>
+			</menu>
+		</menu>
+	</openbox_menu>
