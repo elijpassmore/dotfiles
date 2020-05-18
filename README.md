@@ -1,11 +1,16 @@
 # Dotfiles
 
+## Fonts
+
+* Fira Code
+* Font Awesome
+
 ## Things configured
 
 * bashrc
 * ncmpcpp
 * polybar
-* wallpaper (feh)
+* wallpaper (feh, nitrogen)
 * dunst
 * openbox (openbox, obconf)
 * profile
